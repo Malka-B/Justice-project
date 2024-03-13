@@ -1,0 +1,19 @@
+<mat-sidenav-container>
+    <mat-sidenav>Start</mat-sidenav>
+    <mat-sidenav position="end">End</mat-sidenav>
+    <section>
+        <button class="primary" type="button" (click)="getParticipantsList()">Participants</button>
+    </section>
+    <section>
+        <button class="primary" type="button" (click)="getDiscussionManager()">Discussion Manager</button>
+    </section>
+    <section>
+        <button class="primary" type="button" (click)="getDiscussionDetails()">Discussion Details</button>
+    </section>
+    <section>
+        <button class="primary" type="button" (click)="configSettings()">Settings</button>
+    </section>
+    <section>
+        <button class="primary" type="button" (click)="disconnect()">Leave</button>
+    </section>
+</mat-sidenav-container>

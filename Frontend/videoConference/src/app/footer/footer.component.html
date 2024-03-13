@@ -1,0 +1,7 @@
+<div>
+    <button class="primary" type="button" (click)="camera()">Camera</button>
+    <button class="primary" type="button" (click)="microphone()">Microphone</button>
+    <!--visible for admin only, check the role and the permission-->
+    <button class="primary" *ngIf="currentUser.role === shofet && currentUser.permission === admin " type="button" (click)="muteAll()">Muta All</button> 
+    <button class="primary" type="button" (click)="share()">Share</button>
+</div>
